@@ -14,15 +14,16 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="OuterClock" translatesAutoresizingMaskIntoConstraints="NO" id="e88-kT-2fN">
-                                <rect key="frame" x="21" y="144" width="279" height="279"/>
+                                <rect key="frame" x="21" y="100" width="279" height="279"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="e88-kT-2fN" secondAttribute="height" multiplier="1:1" id="67E-lx-1oi"/>
-                                    <constraint firstAttribute="width" priority="750" constant="353" id="vf7-rE-8V2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="279" id="aUY-Hh-chM"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" priority="750" constant="353" id="vf7-rE-8V2"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -50,6 +51,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
