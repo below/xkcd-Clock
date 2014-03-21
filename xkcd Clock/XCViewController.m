@@ -21,12 +21,33 @@
                                    selector:@selector(updateClock:)
                                    userInfo:nil
                                     repeats:YES];
+    
+    [self updateGlobe:nil];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)updateGlobe:(id)sender {
+    NSTimeZone *myTimeZone = [NSTimeZone localTimeZone];
+    NSTimeInterval secondsFromGMT = myTimeZone.secondsFromGMT;
+    NSTimeInterval mapOffset = 2*60*60;
+        
+    NSTimeInterval rotateInterval = mapOffset - secondsFromGMT;
+    
+    double degrees = rotateInterval / (60.0 * 60.0) * 360.0 / 24.0;
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0f];
+    [UIView setAnimationDelegate:self];
+    
+    CGAffineTransform rotateTransform = CGAffineTransformMakeRotation((degrees * M_PI) / 180.0f);
+    self.innerClock.transform = rotateTransform;
+    [UIView commitAnimations];
+
 }
 
 - (IBAction)updateClock:(NSTimer *)sender {

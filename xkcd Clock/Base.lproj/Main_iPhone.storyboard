@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,16 +20,16 @@
                                 <rect key="frame" x="21" y="100" width="279" height="279"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="279" id="Lpq-QR-Plb"/>
                                     <constraint firstAttribute="width" constant="279" id="aUY-Hh-chM"/>
-                                    <constraint firstAttribute="width" secondItem="e88-kT-2fN" secondAttribute="height" multiplier="1:1" id="ct3-WL-rAi"/>
                                 </constraints>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="InnerClock" translatesAutoresizingMaskIntoConstraints="NO" id="47B-iY-NLd">
                                 <rect key="frame" x="42" y="121" width="237" height="237"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="237" id="6R8-0z-viW"/>
                                     <constraint firstAttribute="width" constant="237" id="WDy-Zw-AwK"/>
-                                    <constraint firstAttribute="width" secondItem="47B-iY-NLd" secondAttribute="height" multiplier="1:1" id="bBU-gE-XUN"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -43,7 +42,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="outerClock" destination="e88-kT-2fN" id="Pg9-1y-pew"/>
+                        <outlet property="innerClock" destination="47B-iY-NLd" id="q3u-ey-QpJ"/>
+                        <outlet property="outerClock" destination="e88-kT-2fN" id="gNX-87-W7U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

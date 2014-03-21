@@ -43,7 +43,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="outerClock" destination="TMY-f0-qfD" id="bAQ-ii-xQn"/>
+                        <outlet property="innerClock" destination="8lG-nW-50y" id="JPl-KJ-j0S"/>
+                        <outlet property="outerClock" destination="TMY-f0-qfD" id="kfy-s1-aBK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
