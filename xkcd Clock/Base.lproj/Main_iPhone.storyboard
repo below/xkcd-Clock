@@ -25,11 +25,21 @@
                                     <constraint firstAttribute="width" secondItem="e88-kT-2fN" secondAttribute="height" multiplier="1:1" id="ct3-WL-rAi"/>
                                 </constraints>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="InnerClock" translatesAutoresizingMaskIntoConstraints="NO" id="47B-iY-NLd">
+                                <rect key="frame" x="42" y="121" width="237" height="237"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="237" id="WDy-Zw-AwK"/>
+                                    <constraint firstAttribute="width" secondItem="47B-iY-NLd" secondAttribute="height" multiplier="1:1" id="bBU-gE-XUN"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="e88-kT-2fN" secondAttribute="centerY" id="TVf-CI-4Q8"/>
+                            <constraint firstAttribute="centerY" secondItem="47B-iY-NLd" secondAttribute="centerY" id="W8Z-7k-cVe"/>
                             <constraint firstAttribute="centerX" secondItem="e88-kT-2fN" secondAttribute="centerX" id="gK4-m6-ZNu"/>
+                            <constraint firstAttribute="centerX" secondItem="47B-iY-NLd" secondAttribute="centerX" id="pep-pW-Oap"/>
                         </constraints>
                     </view>
                     <connections>
@@ -41,6 +51,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="InnerClock" width="298" height="298"/>
         <image name="OuterClock" width="353" height="353"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
