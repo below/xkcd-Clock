@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="353" id="bCb-3O-knP"/>
-                                    <constraint firstAttribute="width" secondItem="TMY-f0-qfD" secondAttribute="height" multiplier="1:1" id="bkc-yL-sMr"/>
+                                    <constraint firstAttribute="height" constant="353" id="p6E-hm-OTD"/>
                                 </constraints>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="InnerClock" translatesAutoresizingMaskIntoConstraints="NO" id="8lG-nW-50y">
@@ -30,7 +29,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="298" id="Shu-RB-TxK"/>
-                                    <constraint firstAttribute="width" secondItem="8lG-nW-50y" secondAttribute="height" multiplier="1:1" id="vLm-5Q-Ba4"/>
+                                    <constraint firstAttribute="height" constant="298" id="bME-NG-EnY"/>
                                 </constraints>
                             </imageView>
                         </subviews>
