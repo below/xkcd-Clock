@@ -21,20 +21,15 @@
                                 <rect key="frame" x="21" y="100" width="279" height="279"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="e88-kT-2fN" secondAttribute="height" multiplier="1:1" id="67E-lx-1oi"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="279" id="aUY-Hh-chM"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" priority="750" constant="353" id="vf7-rE-8V2"/>
+                                    <constraint firstAttribute="width" constant="279" id="aUY-Hh-chM"/>
+                                    <constraint firstAttribute="width" secondItem="e88-kT-2fN" secondAttribute="height" multiplier="1:1" id="ct3-WL-rAi"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="e88-kT-2fN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" symbolic="YES" id="8Ew-gl-GYH"/>
-                            <constraint firstItem="e88-kT-2fN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="94Z-He-fH7"/>
                             <constraint firstAttribute="centerY" secondItem="e88-kT-2fN" secondAttribute="centerY" id="TVf-CI-4Q8"/>
                             <constraint firstAttribute="centerX" secondItem="e88-kT-2fN" secondAttribute="centerX" id="gK4-m6-ZNu"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="e88-kT-2fN" secondAttribute="bottom" constant="20" symbolic="YES" id="vxi-0O-6io"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="e88-kT-2fN" secondAttribute="trailing" constant="20" symbolic="YES" id="wv7-0B-6jW"/>
                         </constraints>
                     </view>
                     <connections>
