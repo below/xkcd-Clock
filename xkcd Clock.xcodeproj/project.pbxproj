@@ -22,6 +22,7 @@
 		CB46161418D06CA7000FD3F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4615F318D06CA6000FD3F3 /* UIKit.framework */; };
 		CB46161C18D06CA8000FD3F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB46161A18D06CA8000FD3F3 /* InfoPlist.strings */; };
 		CB46161E18D06CA8000FD3F3 /* xkcd_ClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB46161D18D06CA8000FD3F3 /* xkcd_ClockTests.m */; };
+		CB86C6541AA724B600DFD45F /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB86C6531AA724B600DFD45F /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		CB46161918D06CA8000FD3F3 /* xkcd ClockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xkcd ClockTests-Info.plist"; sourceTree = "<group>"; };
 		CB46161B18D06CA8000FD3F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB46161D18D06CA8000FD3F3 /* xkcd_ClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xkcd_ClockTests.m; sourceTree = "<group>"; };
+		CB86C6531AA724B600DFD45F /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				CB46160718D06CA7000FD3F3 /* XCViewController.h */,
 				CB46160818D06CA7000FD3F3 /* XCViewController.m */,
 				CB46160A18D06CA7000FD3F3 /* Images.xcassets */,
+				CB86C6531AA724B600DFD45F /* Launch Screen.xib */,
 				CB4615F618D06CA6000FD3F3 /* Supporting Files */,
 			);
 			path = "xkcd Clock";
@@ -236,6 +239,7 @@
 				CB46160B18D06CA7000FD3F3 /* Images.xcassets in Resources */,
 				CB46160318D06CA7000FD3F3 /* Main_iPhone.storyboard in Resources */,
 				CB4615FA18D06CA6000FD3F3 /* InfoPlist.strings in Resources */,
+				CB86C6541AA724B600DFD45F /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +475,7 @@
 				CB46162318D06CA8000FD3F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB46162418D06CA8000FD3F3 /* Build configuration list for PBXNativeTarget "xkcd ClockTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +484,7 @@
 				CB46162618D06CA8000FD3F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
