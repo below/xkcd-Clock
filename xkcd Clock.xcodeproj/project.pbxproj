@@ -23,6 +23,22 @@
 		CB46161C18D06CA8000FD3F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB46161A18D06CA8000FD3F3 /* InfoPlist.strings */; };
 		CB46161E18D06CA8000FD3F3 /* xkcd_ClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB46161D18D06CA8000FD3F3 /* xkcd_ClockTests.m */; };
 		CB86C6541AA724B600DFD45F /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB86C6531AA724B600DFD45F /* Launch Screen.xib */; };
+		CB937DA91AA73F9D002EFECA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB937DA81AA73F9D002EFECA /* InterfaceController.swift */; };
+		CB937DAB1AA73F9D002EFECA /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB937DAA1AA73F9D002EFECA /* GlanceController.swift */; };
+		CB937DAD1AA73F9D002EFECA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB937DAC1AA73F9D002EFECA /* Images.xcassets */; };
+		CB937DB11AA73F9D002EFECA /* xkcd Clock WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = CB937DB01AA73F9D002EFECA /* xkcd Clock WatchKit App.app */; };
+		CB937DB91AA73F9D002EFECA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB937DB71AA73F9D002EFECA /* Interface.storyboard */; };
+		CB937DBB1AA73F9D002EFECA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB937DBA1AA73F9D002EFECA /* Images.xcassets */; };
+		CB937DBE1AA73F9D002EFECA /* xkcd Clock WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB937DA41AA73F9D002EFECA /* xkcd Clock WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBDDEDFC1AAA4C7D00CB61B3 /* XCWatchFace.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDDEDFB1AAA4C7D00CB61B3 /* XCWatchFace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBDDEE021AAA4C7D00CB61B3 /* XCWatchFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDDEDF71AAA4C7D00CB61B3 /* XCWatchFace.framework */; };
+		CBDDEE0B1AAA4C7D00CB61B3 /* XCWatchFaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDEE0A1AAA4C7D00CB61B3 /* XCWatchFaceTests.swift */; };
+		CBDDEE0E1AAA4C7D00CB61B3 /* XCWatchFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDDEDF71AAA4C7D00CB61B3 /* XCWatchFace.framework */; };
+		CBDDEE0F1AAA4C7D00CB61B3 /* XCWatchFace.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBDDEDF71AAA4C7D00CB61B3 /* XCWatchFace.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBDDEE171AAA4C9B00CB61B3 /* XCWatchFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDDEDF71AAA4C7D00CB61B3 /* XCWatchFace.framework */; };
+		CBDDEE191AAA4CDC00CB61B3 /* XCWatchFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDEE181AAA4CDC00CB61B3 /* XCWatchFace.swift */; };
+		CBDDEE1B1AAA526D00CB61B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBDDEE1A1AAA526D00CB61B3 /* Images.xcassets */; };
+		CBDDEE1C1AAA526D00CB61B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBDDEE1A1AAA526D00CB61B3 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +49,74 @@
 			remoteGlobalIDString = CB4615EB18D06CA6000FD3F3;
 			remoteInfo = "xkcd Clock";
 		};
+		CB937DB21AA73F9D002EFECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB4615E418D06CA6000FD3F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB937DAF1AA73F9D002EFECA;
+			remoteInfo = "xkcd Clock WatchKit App";
+		};
+		CB937DBC1AA73F9D002EFECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB4615E418D06CA6000FD3F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB937DA31AA73F9D002EFECA;
+			remoteInfo = "xkcd Clock WatchKit Extension";
+		};
+		CBDDEE031AAA4C7D00CB61B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB4615E418D06CA6000FD3F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBDDEDF61AAA4C7D00CB61B3;
+			remoteInfo = XCWatchFace;
+		};
+		CBDDEE051AAA4C7D00CB61B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB4615E418D06CA6000FD3F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB4615EB18D06CA6000FD3F3;
+			remoteInfo = "xkcd Clock";
+		};
+		CBDDEE0C1AAA4C7D00CB61B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB4615E418D06CA6000FD3F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBDDEDF61AAA4C7D00CB61B3;
+			remoteInfo = XCWatchFace;
+		};
+		CBEBA6A11AB390DB00976E33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB4615E418D06CA6000FD3F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBDDEDF61AAA4C7D00CB61B3;
+			remoteInfo = XCWatchFace;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB937DC51AA73F9D002EFECA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB937DBE1AA73F9D002EFECA /* xkcd Clock WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDDEE151AAA4C7D00CB61B3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CBDDEE0F1AAA4C7D00CB61B3 /* XCWatchFace.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CB4615EC18D06CA6000FD3F3 /* xkcd Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xkcd Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +140,23 @@
 		CB46161B18D06CA8000FD3F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB46161D18D06CA8000FD3F3 /* xkcd_ClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xkcd_ClockTests.m; sourceTree = "<group>"; };
 		CB86C6531AA724B600DFD45F /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		CB937DA41AA73F9D002EFECA /* xkcd Clock WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "xkcd Clock WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB937DA71AA73F9D002EFECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB937DA81AA73F9D002EFECA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CB937DAA1AA73F9D002EFECA /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		CB937DAC1AA73F9D002EFECA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB937DB01AA73F9D002EFECA /* xkcd Clock WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xkcd Clock WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB937DB61AA73F9D002EFECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB937DB81AA73F9D002EFECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CB937DBA1AA73F9D002EFECA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CBDDEDF71AAA4C7D00CB61B3 /* XCWatchFace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCWatchFace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBDDEDFA1AAA4C7D00CB61B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBDDEDFB1AAA4C7D00CB61B3 /* XCWatchFace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCWatchFace.h; sourceTree = "<group>"; };
+		CBDDEE011AAA4C7D00CB61B3 /* XCWatchFaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCWatchFaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBDDEE091AAA4C7D00CB61B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBDDEE0A1AAA4C7D00CB61B3 /* XCWatchFaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCWatchFaceTests.swift; sourceTree = "<group>"; };
+		CBDDEE181AAA4CDC00CB61B3 /* XCWatchFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCWatchFace.swift; sourceTree = "<group>"; };
+		CBDDEE1A1AAA526D00CB61B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +166,7 @@
 			files = (
 				CB4615F218D06CA6000FD3F3 /* CoreGraphics.framework in Frameworks */,
 				CB4615F418D06CA6000FD3F3 /* UIKit.framework in Frameworks */,
+				CBDDEE0E1AAA4C7D00CB61B3 /* XCWatchFace.framework in Frameworks */,
 				CB4615F018D06CA6000FD3F3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +181,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB937DA11AA73F9D002EFECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDDEE171AAA4C9B00CB61B3 /* XCWatchFace.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDDEDF31AAA4C7D00CB61B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDDEDFE1AAA4C7D00CB61B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDDEE021AAA4C7D00CB61B3 /* XCWatchFace.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +212,10 @@
 			children = (
 				CB4615F518D06CA6000FD3F3 /* xkcd Clock */,
 				CB46161718D06CA7000FD3F3 /* xkcd ClockTests */,
+				CB937DA51AA73F9D002EFECA /* xkcd Clock WatchKit Extension */,
+				CB937DB41AA73F9D002EFECA /* xkcd Clock WatchKit App */,
+				CBDDEDF81AAA4C7D00CB61B3 /* XCWatchFace */,
+				CBDDEE071AAA4C7D00CB61B3 /* XCWatchFaceTests */,
 				CB4615EE18D06CA6000FD3F3 /* Frameworks */,
 				CB4615ED18D06CA6000FD3F3 /* Products */,
 			);
@@ -98,6 +226,10 @@
 			children = (
 				CB4615EC18D06CA6000FD3F3 /* xkcd Clock.app */,
 				CB46161018D06CA7000FD3F3 /* xkcd ClockTests.xctest */,
+				CB937DA41AA73F9D002EFECA /* xkcd Clock WatchKit Extension.appex */,
+				CB937DB01AA73F9D002EFECA /* xkcd Clock WatchKit App.app */,
+				CBDDEDF71AAA4C7D00CB61B3 /* XCWatchFace.framework */,
+				CBDDEE011AAA4C7D00CB61B3 /* XCWatchFaceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,7 +290,91 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CB937DA51AA73F9D002EFECA /* xkcd Clock WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CB937DA81AA73F9D002EFECA /* InterfaceController.swift */,
+				CB937DAA1AA73F9D002EFECA /* GlanceController.swift */,
+				CB937DAC1AA73F9D002EFECA /* Images.xcassets */,
+				CB937DA61AA73F9D002EFECA /* Supporting Files */,
+			);
+			path = "xkcd Clock WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CB937DA61AA73F9D002EFECA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB937DA71AA73F9D002EFECA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB937DB41AA73F9D002EFECA /* xkcd Clock WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CB937DB71AA73F9D002EFECA /* Interface.storyboard */,
+				CB937DBA1AA73F9D002EFECA /* Images.xcassets */,
+				CB937DB51AA73F9D002EFECA /* Supporting Files */,
+			);
+			path = "xkcd Clock WatchKit App";
+			sourceTree = "<group>";
+		};
+		CB937DB51AA73F9D002EFECA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB937DB61AA73F9D002EFECA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBDDEDF81AAA4C7D00CB61B3 /* XCWatchFace */ = {
+			isa = PBXGroup;
+			children = (
+				CBDDEDFB1AAA4C7D00CB61B3 /* XCWatchFace.h */,
+				CBDDEE181AAA4CDC00CB61B3 /* XCWatchFace.swift */,
+				CBDDEDF91AAA4C7D00CB61B3 /* Supporting Files */,
+				CBDDEE1A1AAA526D00CB61B3 /* Images.xcassets */,
+			);
+			path = XCWatchFace;
+			sourceTree = "<group>";
+		};
+		CBDDEDF91AAA4C7D00CB61B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBDDEDFA1AAA4C7D00CB61B3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBDDEE071AAA4C7D00CB61B3 /* XCWatchFaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBDDEE0A1AAA4C7D00CB61B3 /* XCWatchFaceTests.swift */,
+				CBDDEE081AAA4C7D00CB61B3 /* Supporting Files */,
+			);
+			path = XCWatchFaceTests;
+			sourceTree = "<group>";
+		};
+		CBDDEE081AAA4C7D00CB61B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBDDEE091AAA4C7D00CB61B3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CBDDEDF41AAA4C7D00CB61B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDDEDFC1AAA4C7D00CB61B3 /* XCWatchFace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CB4615EB18D06CA6000FD3F3 /* xkcd Clock */ = {
@@ -168,10 +384,14 @@
 				CB4615E818D06CA6000FD3F3 /* Sources */,
 				CB4615E918D06CA6000FD3F3 /* Frameworks */,
 				CB4615EA18D06CA6000FD3F3 /* Resources */,
+				CB937DC51AA73F9D002EFECA /* Embed App Extensions */,
+				CBDDEE151AAA4C7D00CB61B3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CBDDEE0D1AAA4C7D00CB61B3 /* PBXTargetDependency */,
+				CB937DBD1AA73F9D002EFECA /* PBXTargetDependency */,
 			);
 			name = "xkcd Clock";
 			productName = "xkcd Clock";
@@ -196,6 +416,77 @@
 			productReference = CB46161018D06CA7000FD3F3 /* xkcd ClockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CB937DA31AA73F9D002EFECA /* xkcd Clock WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB937DC41AA73F9D002EFECA /* Build configuration list for PBXNativeTarget "xkcd Clock WatchKit Extension" */;
+			buildPhases = (
+				CB937DA01AA73F9D002EFECA /* Sources */,
+				CB937DA11AA73F9D002EFECA /* Frameworks */,
+				CB937DA21AA73F9D002EFECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBEBA6A21AB390DB00976E33 /* PBXTargetDependency */,
+				CB937DB31AA73F9D002EFECA /* PBXTargetDependency */,
+			);
+			name = "xkcd Clock WatchKit Extension";
+			productName = "xkcd Clock WatchKit Extension";
+			productReference = CB937DA41AA73F9D002EFECA /* xkcd Clock WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		CB937DAF1AA73F9D002EFECA /* xkcd Clock WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB937DC31AA73F9D002EFECA /* Build configuration list for PBXNativeTarget "xkcd Clock WatchKit App" */;
+			buildPhases = (
+				CB937DAE1AA73F9D002EFECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "xkcd Clock WatchKit App";
+			productName = "xkcd Clock WatchKit App";
+			productReference = CB937DB01AA73F9D002EFECA /* xkcd Clock WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		CBDDEDF61AAA4C7D00CB61B3 /* XCWatchFace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBDDEE141AAA4C7D00CB61B3 /* Build configuration list for PBXNativeTarget "XCWatchFace" */;
+			buildPhases = (
+				CBDDEDF21AAA4C7D00CB61B3 /* Sources */,
+				CBDDEDF31AAA4C7D00CB61B3 /* Frameworks */,
+				CBDDEDF41AAA4C7D00CB61B3 /* Headers */,
+				CBDDEDF51AAA4C7D00CB61B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCWatchFace;
+			productName = XCWatchFace;
+			productReference = CBDDEDF71AAA4C7D00CB61B3 /* XCWatchFace.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CBDDEE001AAA4C7D00CB61B3 /* XCWatchFaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBDDEE161AAA4C7D00CB61B3 /* Build configuration list for PBXNativeTarget "XCWatchFaceTests" */;
+			buildPhases = (
+				CBDDEDFD1AAA4C7D00CB61B3 /* Sources */,
+				CBDDEDFE1AAA4C7D00CB61B3 /* Frameworks */,
+				CBDDEDFF1AAA4C7D00CB61B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBDDEE041AAA4C7D00CB61B3 /* PBXTargetDependency */,
+				CBDDEE061AAA4C7D00CB61B3 /* PBXTargetDependency */,
+			);
+			name = XCWatchFaceTests;
+			productName = XCWatchFaceTests;
+			productReference = CBDDEE011AAA4C7D00CB61B3 /* XCWatchFaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +498,19 @@
 				ORGANIZATIONNAME = "Alexander von Below";
 				TargetAttributes = {
 					CB46160F18D06CA7000FD3F3 = {
+						TestTargetID = CB4615EB18D06CA6000FD3F3;
+					};
+					CB937DA31AA73F9D002EFECA = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					CB937DAF1AA73F9D002EFECA = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					CBDDEDF61AAA4C7D00CB61B3 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					CBDDEE001AAA4C7D00CB61B3 = {
+						CreatedOnToolsVersion = 6.2;
 						TestTargetID = CB4615EB18D06CA6000FD3F3;
 					};
 				};
@@ -226,6 +530,10 @@
 			targets = (
 				CB4615EB18D06CA6000FD3F3 /* xkcd Clock */,
 				CB46160F18D06CA7000FD3F3 /* xkcd ClockTests */,
+				CB937DA31AA73F9D002EFECA /* xkcd Clock WatchKit Extension */,
+				CB937DAF1AA73F9D002EFECA /* xkcd Clock WatchKit App */,
+				CBDDEDF61AAA4C7D00CB61B3 /* XCWatchFace */,
+				CBDDEE001AAA4C7D00CB61B3 /* XCWatchFaceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,6 +559,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB937DA21AA73F9D002EFECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB937DB11AA73F9D002EFECA /* xkcd Clock WatchKit App.app in Resources */,
+				CBDDEE1B1AAA526D00CB61B3 /* Images.xcassets in Resources */,
+				CB937DAD1AA73F9D002EFECA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB937DAE1AA73F9D002EFECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB937DB91AA73F9D002EFECA /* Interface.storyboard in Resources */,
+				CB937DBB1AA73F9D002EFECA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDDEDF51AAA4C7D00CB61B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDDEE1C1AAA526D00CB61B3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDDEDFF1AAA4C7D00CB61B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -272,6 +614,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB937DA01AA73F9D002EFECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB937DA91AA73F9D002EFECA /* InterfaceController.swift in Sources */,
+				CB937DAB1AA73F9D002EFECA /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDDEDF21AAA4C7D00CB61B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDDEE191AAA4CDC00CB61B3 /* XCWatchFace.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDDEDFD1AAA4C7D00CB61B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDDEE0B1AAA4C7D00CB61B3 /* XCWatchFaceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -279,6 +646,36 @@
 			isa = PBXTargetDependency;
 			target = CB4615EB18D06CA6000FD3F3 /* xkcd Clock */;
 			targetProxy = CB46161518D06CA7000FD3F3 /* PBXContainerItemProxy */;
+		};
+		CB937DB31AA73F9D002EFECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB937DAF1AA73F9D002EFECA /* xkcd Clock WatchKit App */;
+			targetProxy = CB937DB21AA73F9D002EFECA /* PBXContainerItemProxy */;
+		};
+		CB937DBD1AA73F9D002EFECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB937DA31AA73F9D002EFECA /* xkcd Clock WatchKit Extension */;
+			targetProxy = CB937DBC1AA73F9D002EFECA /* PBXContainerItemProxy */;
+		};
+		CBDDEE041AAA4C7D00CB61B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBDDEDF61AAA4C7D00CB61B3 /* XCWatchFace */;
+			targetProxy = CBDDEE031AAA4C7D00CB61B3 /* PBXContainerItemProxy */;
+		};
+		CBDDEE061AAA4C7D00CB61B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB4615EB18D06CA6000FD3F3 /* xkcd Clock */;
+			targetProxy = CBDDEE051AAA4C7D00CB61B3 /* PBXContainerItemProxy */;
+		};
+		CBDDEE0D1AAA4C7D00CB61B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBDDEDF61AAA4C7D00CB61B3 /* XCWatchFace */;
+			targetProxy = CBDDEE0C1AAA4C7D00CB61B3 /* PBXContainerItemProxy */;
+		};
+		CBEBA6A21AB390DB00976E33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBDDEDF61AAA4C7D00CB61B3 /* XCWatchFace */;
+			targetProxy = CBEBA6A11AB390DB00976E33 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -313,6 +710,14 @@
 				CB46161B18D06CA8000FD3F3 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CB937DB71AA73F9D002EFECA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB937DB81AA73F9D002EFECA /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -395,9 +800,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "xkcd Clock/xkcd Clock-Prefix.pch";
 				INFOPLIST_FILE = "xkcd Clock/xkcd Clock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -408,9 +816,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "xkcd Clock/xkcd Clock-Prefix.pch";
 				INFOPLIST_FILE = "xkcd Clock/xkcd Clock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +867,176 @@
 			};
 			name = Release;
 		};
+		CB937DBF1AA73F9D002EFECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "xkcd Clock WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB937DC01AA73F9D002EFECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "xkcd Clock WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CB937DC11AA73F9D002EFECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = xkcd_Clock_WatchKit_Extension;
+				INFOPLIST_FILE = "xkcd Clock WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		CB937DC21AA73F9D002EFECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IBSC_MODULE = xkcd_Clock_WatchKit_Extension;
+				INFOPLIST_FILE = "xkcd Clock WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		CBDDEE101AAA4C7D00CB61B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XCWatchFace/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CBDDEE111AAA4C7D00CB61B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = XCWatchFace/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CBDDEE121AAA4C7D00CB61B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XCWatchFaceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xkcd Clock.app/xkcd Clock";
+			};
+			name = Debug;
+		};
+		CBDDEE131AAA4C7D00CB61B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XCWatchFaceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xkcd Clock.app/xkcd Clock";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -482,6 +1063,42 @@
 			buildConfigurations = (
 				CB46162518D06CA8000FD3F3 /* Debug */,
 				CB46162618D06CA8000FD3F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB937DC31AA73F9D002EFECA /* Build configuration list for PBXNativeTarget "xkcd Clock WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB937DC11AA73F9D002EFECA /* Debug */,
+				CB937DC21AA73F9D002EFECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB937DC41AA73F9D002EFECA /* Build configuration list for PBXNativeTarget "xkcd Clock WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB937DBF1AA73F9D002EFECA /* Debug */,
+				CB937DC01AA73F9D002EFECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBDDEE141AAA4C7D00CB61B3 /* Build configuration list for PBXNativeTarget "XCWatchFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBDDEE101AAA4C7D00CB61B3 /* Debug */,
+				CBDDEE111AAA4C7D00CB61B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBDDEE161AAA4C7D00CB61B3 /* Build configuration list for PBXNativeTarget "XCWatchFaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBDDEE121AAA4C7D00CB61B3 /* Debug */,
+				CBDDEE131AAA4C7D00CB61B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -11,5 +11,6 @@
 @interface XCViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *outerClock;
 @property (weak, nonatomic) IBOutlet UIImageView *innerClock;
+@property (weak, nonatomic) IBOutlet UIImageView *testImageView;
 
 @end

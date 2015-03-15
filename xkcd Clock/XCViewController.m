@@ -7,6 +7,7 @@
 //
 
 #import "XCViewController.h"
+#import "XCWatchFace.h"
 
 @interface XCViewController ()
 
@@ -32,6 +33,11 @@
 }
 
 - (IBAction)updateGlobe:(id)sender {
+    
+    XCWatchFace * watchFace = [[XCWatchFace alloc] initWithSize:CGSizeMake(300, 300)];
+    UIImage * image = [watchFace imageWithSecondsFromGMT:[NSTimeZone localTimeZone].secondsFromGMT date:[NSDate date]];
+    self.testImageView.image = image;
+    
     NSTimeZone *myTimeZone = [NSTimeZone localTimeZone];
     NSTimeInterval secondsFromGMT = myTimeZone.secondsFromGMT;
     NSTimeInterval mapOffset = 2*60*60;
@@ -55,7 +61,7 @@
     NSDate * now = [NSDate date];
     NSDateComponents *components;
     NSCalendar *gregorian = [[NSCalendar alloc]
-                             initWithCalendarIdentifier:NSGregorianCalendar];
+                             initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     components = [gregorian components:NSCalendarUnitSecond | NSCalendarUnitMinute | NSCalendarUnitHour
                               fromDate:now];
     
