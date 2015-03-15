@@ -14,6 +14,9 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var watchImage: WKInterfaceImage!
     
+    var timer : NSTimer?
+    var watchFace : XCWatchFace?
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -21,16 +24,20 @@ class InterfaceController: WKInterfaceController {
     }
 
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        let watchFace = XCWatchFace(size: CGSizeMake(400, 400));
-        let image = watchFace.image()
-        self.watchImage.setImage(image)
+        self.watchFace = XCWatchFace(size: CGSizeMake(400, 400));
+        self.updateClock()
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(2*60, target: self, selector: "updateClock", userInfo: nil, repeats: true)
     }
 
     override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
+        self.timer?.invalidate()
+        self.timer = nil
         super.didDeactivate()
     }
 
+    func updateClock() {
+        let image = self.watchFace?.image()
+        self.watchImage.setImage(image)
+    }
 }
