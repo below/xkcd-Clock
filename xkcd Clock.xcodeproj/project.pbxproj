@@ -139,6 +139,7 @@
 		CB46161918D06CA8000FD3F3 /* xkcd ClockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xkcd ClockTests-Info.plist"; sourceTree = "<group>"; };
 		CB46161B18D06CA8000FD3F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB46161D18D06CA8000FD3F3 /* xkcd_ClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xkcd_ClockTests.m; sourceTree = "<group>"; };
+		CB6795361AB5E57C005E283E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CB86C6531AA724B600DFD45F /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		CB937DA41AA73F9D002EFECA /* xkcd Clock WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "xkcd Clock WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB937DA71AA73F9D002EFECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -210,6 +211,7 @@
 		CB4615E318D06CA6000FD3F3 = {
 			isa = PBXGroup;
 			children = (
+				CB6795361AB5E57C005E283E /* README.md */,
 				CB4615F518D06CA6000FD3F3 /* xkcd Clock */,
 				CB46161718D06CA7000FD3F3 /* xkcd ClockTests */,
 				CB937DA51AA73F9D002EFECA /* xkcd Clock WatchKit Extension */,

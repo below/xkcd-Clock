@@ -20,12 +20,13 @@ class InterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        // Configure interface objects here.
+        var contentFrame = self.contentFrame;
+        let imageSize = WKInterfaceDevice.currentDevice().screenScale * min(contentFrame.size.width, contentFrame.size.height)
+        self.watchFace = XCWatchFace(size: CGSizeMake(imageSize, imageSize));
     }
 
     override func willActivate() {
         super.willActivate()
-        self.watchFace = XCWatchFace(size: CGSizeMake(400, 400));
         self.updateClock()
         self.timer = NSTimer.scheduledTimerWithTimeInterval(2*60, target: self, selector: "updateClock", userInfo: nil, repeats: true)
     }
