@@ -7,7 +7,7 @@
 //
 
 #import "XCAppDelegate.h"
-
+#import <WatchKit/WatchKit.h>
 @implementation XCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

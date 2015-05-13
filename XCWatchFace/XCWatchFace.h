@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XCWatchFace-Swift.h"
 
 //! Project version number for XCWatchFace.
 FOUNDATION_EXPORT double XCWatchFaceVersionNumber;

@@ -24,7 +24,6 @@
 		CB46161E18D06CA8000FD3F3 /* xkcd_ClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB46161D18D06CA8000FD3F3 /* xkcd_ClockTests.m */; };
 		CB86C6541AA724B600DFD45F /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB86C6531AA724B600DFD45F /* Launch Screen.xib */; };
 		CB937DA91AA73F9D002EFECA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB937DA81AA73F9D002EFECA /* InterfaceController.swift */; };
-		CB937DAB1AA73F9D002EFECA /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB937DAA1AA73F9D002EFECA /* GlanceController.swift */; };
 		CB937DAD1AA73F9D002EFECA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB937DAC1AA73F9D002EFECA /* Images.xcassets */; };
 		CB937DB11AA73F9D002EFECA /* xkcd Clock WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = CB937DB01AA73F9D002EFECA /* xkcd Clock WatchKit App.app */; };
 		CB937DB91AA73F9D002EFECA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB937DB71AA73F9D002EFECA /* Interface.storyboard */; };
@@ -144,7 +143,6 @@
 		CB937DA41AA73F9D002EFECA /* xkcd Clock WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "xkcd Clock WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB937DA71AA73F9D002EFECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB937DA81AA73F9D002EFECA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		CB937DAA1AA73F9D002EFECA /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		CB937DAC1AA73F9D002EFECA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB937DB01AA73F9D002EFECA /* xkcd Clock WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xkcd Clock WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB937DB61AA73F9D002EFECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -296,7 +294,6 @@
 			isa = PBXGroup;
 			children = (
 				CB937DA81AA73F9D002EFECA /* InterfaceController.swift */,
-				CB937DAA1AA73F9D002EFECA /* GlanceController.swift */,
 				CB937DAC1AA73F9D002EFECA /* Images.xcassets */,
 				CB937DA61AA73F9D002EFECA /* Supporting Files */,
 			);
@@ -621,7 +618,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB937DA91AA73F9D002EFECA /* InterfaceController.swift in Sources */,
-				CB937DAB1AA73F9D002EFECA /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,7 +776,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
