@@ -23,7 +23,7 @@ class XCWatchFaceTests: XCTestCase {
     }
     
     func testExample() {
-        var image = watchFace!.image()
+        let image = watchFace?.image()
         XCTAssertNotNil(image, "image must not be nil")
     }
     

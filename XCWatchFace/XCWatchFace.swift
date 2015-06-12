@@ -14,7 +14,7 @@ import Foundation
         self.size = size
     }
     
-    public func image (secondsFromGMT : Int = NSTimeZone.localTimeZone().secondsFromGMT, date : NSDate = NSDate() ) -> UIImage? {
+    public func image (secondsFromGMT secondsFromGMT : Int = NSTimeZone.localTimeZone().secondsFromGMT, date : NSDate = NSDate() ) -> UIImage? {
         if let innerClockImage = UIImage(named: "InnerClock") {
             if let outerClockImage = UIImage(named: "OuterClock") {
                 
@@ -36,7 +36,7 @@ import Foundation
                 CGContextTranslateCTM(ctx, floor(self.size.width/2), floor(self.size.height/2))
               
                 if let gregorian = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian) {
-                    let components = gregorian.components(NSCalendarUnit.SecondCalendarUnit | NSCalendarUnit.MinuteCalendarUnit | NSCalendarUnit.HourCalendarUnit, fromDate: date)
+                    let components = gregorian.components([NSCalendarUnit.Second,  NSCalendarUnit.Minute,  NSCalendarUnit.Hour], fromDate: date)
                     let totalSeconds = components.second + (components.hour * 60 + components.minute) * 60;
                     let noon = CGFloat(12 * 60 * 60)
                     let adjustedTime = CGFloat(totalSeconds) - noon;
